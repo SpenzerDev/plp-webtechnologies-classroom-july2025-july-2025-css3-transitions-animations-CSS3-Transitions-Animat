@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <h1>Animation Playground</h1>
+        
+        <!-- PART 1: CSS Transitions & Animations -->
+        <div class="section">
+            <h2>Part 1: CSS Transitions & Animations</h2>
+            
+            <h3>1. Button Hover Effect</h3>
+            <button class="btn-hover">Hover to Lift</button>
+            
+            <h3>2. Smooth Fade Transition</h3>
+            <div class="fade-box">Hover me</div>
+            
+            <h3>3. Keyframe Animation</h3>
+            <div class="bounce-animation">Bouncing</div>
+        </div>
+        
+        <!-- PART 2: JavaScript Functions - Scope, Parameters & Return Values -->
+        <div class="section">
+            <h2>Part 2:Scope, Parameters & Return Values</h2>
+            
+            <h3>1. Function with Parameters & Return Value</h3>
+            <button class="control-btn" onclick="calculateArea(5, 10)">Calculate Area (5x10)</button>
+            <button class="control-btn" onclick="calculateArea(3, 7)">Calculate Area (3x7)</button>
+            <p>Result: <span id="areaResult">Click to calculate</span></p>
+            
+            <h3>2. Global vs Local Scope Demonstration</h3>
+            <button class="control-btn" onclick="scopeDemo()">Show Scope Demo</button>
+            <p>Global Counter: <span id="globalCounter">0</span></p>
+            <p>Function Message: <span id="scopeMessage">Click to see scope</span></p>
+            
+            <h3>3. Reusable Function with Different Parameters</h3>
+            <button class="control-btn" onclick="greetUser('Alice')">Greet Alice</button>
+            <button class="control-btn" onclick="greetUser('Bob')">Greet Bob</button>
+            <button class="control-btn" onclick="greetUser()">Greet Default</button>
+            <p>Greeting: <span id="greeting">Click to greet</span></p>
+        </div>
+        
+       
+        <div class="section">
+            <h2>Part 3: Triggered Animations</h2>
+            
+            <h3>1. Button Triggers Box Animation</h3>
+            <button class="control-btn" onclick="spinBox()">Spin Box</button>
+            <div class="interactive-box" id="box1">1</div>
+            
+            <h3>2. Toggle Glow Effect</h3>
+            <button class="control-btn" onclick="glowBox()">Toggle Glow</button>
+            <div class="interactive-box" id="box2">2</div>
+            
+            <h3>3. Loading Animation Control</h3>
+            <button class="control-btn" onclick="showLoader()">Start Loading</button>
+            <div class="loader" id="loader"></div>
+            
+            <p>Total Animations: <span id="counter">0</span></p>
+            <button class="control-btn" onclick="resetAll()">Reset All</button>
+        </div>
+    </div> 
+     <footer>
+        <p>&copy; 2025 All rights reserved.</p>
+    </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
